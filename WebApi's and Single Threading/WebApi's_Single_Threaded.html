@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Api's and Single threaded</title>
+</head>
+<body>
+    <ul>
+        <li>
+            Js is single threaded -> This means that at any
+            given point point in time , that single js thread is running at most one line of js code
+        </li>
+        <li>
+            considering the above situation we may be hault at a particluar scenario looking for some actions to get out of it we make use of asynchronous js Callbacks,promises
+        </li>
+        <li>
+            the above code will stuck the execution as JS is single threaded but it's not the case - The broser does the Work
+        </li>
+        <li>
+            Browser is not written in JS it is written by some other languages such as C/C++ which can handle such scenarios
+        </li>
+        <li>
+            Browser comes with web APi's that are able to handle certain tasks in the background
+            ex- setTimout(),setInterval() are such web Api's
+        </li>
+        <li>
+            the Js call stack recongnises these web Api's functions and passes then off to the browser to take care of
+        </li>
+        <li>
+            the browser finishes those tasks they return and are pushed onto the stack as a callback
+        </li>
+    </ul>
+    <script src="app.js"></script>
+</body>
+</html>

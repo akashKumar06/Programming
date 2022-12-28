@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Functions</title>
+    <style>
+        p{
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        b,i{
+            color:crimson;
+        }
+        ul li{
+            font-size:20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        body{
+            transition: 1s background-color;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <b>Async Functions</b> A newer and cleaner syntax for working with async code <i>Syntax "makeup" for promises</i>
+    </p>
+    <p>
+        <ul>
+            <li>ASYNC</li>
+            <li>AWAIT</li>
+        </ul>
+    </p>
+    <p>
+        <ul>
+            <h2>The async Keyword</h2>
+            <li>Async functions always return a <b>promise</b></li>
+            <li>If the fucntion <b>return</b> a <b>value</b>, the promise will be <b>resolved</b> with that value</li>
+            <li>If the function throws an exception, the promise will be rejected</li>
+        </ul>
+    </p>
+    <p>
+        <h2>The await keyword</h2>
+        <ul>
+            <li>We can only use the <b>await</b> keyword <b>inside</b> of functions declarations with <b>async</b></li>
+            <li>
+                await will pause the execution of the function, <b>waiting for a promise to be resolved</b>
+            </li>
+        </ul>
+    </p>
+
+    <script src="app4.js"></script>
+</body>
+</html>
