@@ -101,3 +101,8 @@ input{
 .form-buttons{
     margin: 0px 40px;
 }
+
+#email{
+    background: url(email.png) no-repeat;
+    background-size:10%;
+}
